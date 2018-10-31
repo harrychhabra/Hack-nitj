@@ -28,6 +28,10 @@
   box-sizing: border-box;
  text-align: center;
 }
+.list:hover{
+  background-color: red;
+  border-radius: 5px;
+}
 .navBarlogoutButton{
   height: 40px;
   width: auto;
@@ -147,7 +151,7 @@
 .right{
   height: 93%;
   width:20%;
-  border:1px solid blue;
+  border:1px solid green;
   display: inline-block;
   padding:0px;
   margin:0px;
@@ -156,12 +160,40 @@
 }
 .rightSearchBlock{
   width:100%;
-  height:auto;
+  height:25%;
   border:1px solid black;
   box-sizing: border-box;
+  padding-bottom: 20px;
 }
 .rightSearchBlockInput{
   width: 100%;
+
+}
+.rightSearchBlockButton{
+  width:100%;
+  height: auto;
+  background-color: white;
+}
+.rightNotificationBlock{
+  width: 100%;
+  border:1px solid red;
+  height:75%;
+  overflow: srcoll;
+}
+.rightNotificationBlockHeader{
+  font-weight:bold;
+  border:1px solid black;
+}
+.notificationBlockLi{
+  border-bottom:1px solid black;
+  padding-top:5px;
+}
+.notificationBlockLi:hover{
+  padding:7px;
+  box-shadow: 1px 1px;
+}
+.notificationBlockUploadBy{
+  color:blue;
 }
 /*Right Section ends*/
 
