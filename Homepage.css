@@ -1,0 +1,195 @@
+/*Navbar*/
+.navbarBody{
+  width:100%;
+  border:0px solid blue;
+  padding-bottom:0px;
+  background-color: #222;
+  /*max-height: 50px;*/
+  /*overflow: hidden;*/
+  box-sizing: border-box;
+  /*position: fixed;*/
+}
+
+.listBody{
+  list-style-type: none;
+  margin-left: 0px;
+  border:0px solid red;
+  margin-bottom: 0px;
+  width:auto;
+  display: inline-block;
+  padding-left: 0px;
+}
+
+.list{
+  border:0px solid green;
+  display: inline-block;
+  width:auto;
+  height:auto;
+  box-sizing: border-box;
+ text-align: center;
+}
+.navBarlogoutButton{
+  height: 40px;
+  width: auto;
+  background-color: green;
+  display:inline-block;
+  border:0px solid white ;
+
+}
+.navbarButton{
+  height:40px;
+  width:100px;
+  background-color: inherit;
+  border:0px solid black;
+  border-radius: 7px 7px 7px 7px;
+  box-sizing: border-box;
+  display: inline-block;
+  color: white;
+}
+.navBarRight{
+  display:inline-block;
+  float:right;
+}
+.navBarIcon{
+  width:20px;
+  height:20px;
+  border:0px solid red;
+  background-color: blue;
+}
+.navBarAccount{
+  width:auto;
+  height:40px;
+  background-color: lightblue;
+  border:0px solid white;
+}
+.navBarProfileIcon{
+  border:1px solid black;
+  background-color: black;
+  width:40px;
+  height: 40px;
+  display: inline-block; 
+}
+/*Navbar Ends*/
+
+/*Left Section*/
+.left{
+  height:93%;
+  width:20%;
+  border:1px solid red;
+  display: inline-block;
+  padding:0px;
+  margin:0px;
+  float:left;
+}
+.leftContentsBlock{
+  border:0px solid black;
+  max-height:78%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.leftContent{
+  width:100%;
+  height:auto;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding:5px 0px 5px 10px;
+  font-size: 15px;
+}
+
+/*Left Section ends*/
+
+/*Middle Section*/
+.middle{
+  height:93%;
+  width:60%;
+  border:0px solid green;
+  display:inline-block;
+  padding:0px;
+  margin:0px;
+  overflow:auto;
+}
+.newsfeedContent{
+  width:100%;
+  height:200px;
+  border:1px solid black;
+  position: relative;
+}
+.uploadedBy{
+  color:red;
+}
+.uploadDate{
+  float:right;
+}
+.contentHeader{
+  width:100%;
+}
+.contentFooter{
+  width:100%;
+  height:30px;
+  border:1px solid black;
+  bottom:0px;
+  position: absolute;
+}
+.loadMoreBlock{
+  width:100%;
+  height:50px;
+  border:1px solid black;
+  text-align: center;
+}
+.profileOptions{
+  list-style-type: none;
+  padding-left: 0px;
+  display:none;
+}
+/*Middle Section ends*/
+
+/*Right Section*/
+.right{
+  height: 93%;
+  width:20%;
+  border:1px solid blue;
+  display: inline-block;
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  float:right;
+}
+.rightSearchBlock{
+  width:100%;
+  height:auto;
+  border:1px solid black;
+  box-sizing: border-box;
+}
+.rightSearchBlockInput{
+  width: 100%;
+}
+/*Right Section ends*/
+
+.profileBlock{
+  width:100%;
+  height:auto;
+  border:0px solid red;
+  box-sizing: border-box;
+}
+.profileImageBlock{
+  width:150px;
+  height: 150px;
+  overflow: hidden;
+  border:1px solid black;
+  border-radius: 100px;
+  box-shadow: 2px 2px;
+}
+.profileImage{
+  width:100%;
+  height:100%;
+}
+.profileBlockUsername{
+  font-family: profileBlockUsernameFont;
+  font-weight: bold;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: profileBlockUsernameFont
+  url:('Fonts/PatrickHand-Regular.ttf');
+}
