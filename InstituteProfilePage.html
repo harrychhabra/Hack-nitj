@@ -1,20 +1,23 @@
 <html>
 <title>
-	Super Admin
+	Institue Profile Page
 </title>
-	<link href="superAdminHomepage.css" rel="stylesheet">
-	<script src="superAdminHomepage.js" type="text/javascript"></script>
+	<link href="InstituteProfilePage.css" rel="stylesheet">
+	<script src="InstituteProfilePage.js" type="text/javascript"></script>
 <body style="margin: 0px;background-color: WhiteSmoke">
 	<!-- NavBar -->
 		<nav class="navbarBody">
-			<span style="color: white;font-size: 2em;">SANVAD</span>			
-			<!--NavBar Right Section -->
-			<div class="navBarRight">
-				<a href="LoginPage.html"><button class="navBarlogoutButton">
-					Logout
-				</button></a>
-			</div>	
-			<!-- NavBar Right Section ends -->
+			<span style="color: white;font-size: 2em;">SANVAD</span>
+			<ul class="listBody">
+				<li class="list">
+					<a href="InstituteAdmin.html"><button class="navbarButton">
+						<img src="Images/home3.png" class="navBarIcon">
+						<br>
+						Home
+					</button></a>
+				</li>
+
+			</ul>	
 		</nav>
 
 		<!-- NavBar ends -->
@@ -24,14 +27,18 @@
 		<div class="leftBody">
 			<br>
 			<ul class="leftBodyUl">
-				<li class="leftBodyUlLi" onclick="loadAddInstitute()" style="background-color: lightgrey;">
-					Add Institute
+				<li class="leftBodyUlLi" onclick="loadInstitueProfile()" style="background-color: lightgrey;">
+					Instiute Profile
+				</li>
+				<hr>
+				<li class="leftBodyUlLi" onclick="loadAddInstitute()">
+					Add User
 				</li>
 				<li class="leftBodyUlLi" onclick="loadModifyInstitute()">
-					Modify Institute
+					Modify Profile
 				</li>
 				<li class="leftBodyUlLi" onclick="loadAllInstitute()">
-					View all Institutes
+					View all Users
 				</li>
 				<li class="leftBodyUlLi" onclick="loadChangePassword()">
 					Change Password
@@ -42,20 +49,42 @@
 		<!-- Middle Section -->
 		<div class="middleBody">
 			<br><br>
+			<!-- Institute Profile -->
+			<div class="institueProfile" >
+				<table>
+					<tr>
+						<td>Institue Name:</td>
+						<td>Dr. B.R. Ambedkar National Institute of Technology</td>
+					</tr>
+					<tr>
+						<td>Institue Type:</td>
+						<td>NIT</td>
+					</tr>
+					<tr>
+						<td>Director Name:</td>
+						<td>Nitish Kumar</td>
+					</tr>
+				</table>
+			</div>
+			<!-- Institute Profile ends -->
 			<!-- Add Institute -->
 			<div class="addInstituteBlock">
 				<table>
 					<tr>
-						<td>Institute Name:</td>
-						<td><input type="password" placeholder="Current Password"></td>
+						<td>User Name:</td>
+						<td><input type="text" placeholder="Username"></td>
 					</tr>
 					<tr>
-						<td>New Password:</td>
-						<td><input type="password" placeholder="New Password"></td>
+						<td>Password:</td>
+						<td><input type="password" placeholder="Password"></td>
+					</tr>
+					<tr>
+						<td>Institue Name:</td>
+						<td><input type="text" placeholder="Institue name"></td>
 					</tr>
 					<tr>
 						<td>
-							<input type="button" value="Update">
+							<input type="button" value="Add">
 						</td>
 					</tr>
 				</table>
@@ -65,12 +94,30 @@
 			<div class="modifyInstituteBlock">
 				<table>
 					<tr>
-						<td>Current Password:</td>
-						<td><input type="password" placeholder="Current Password"></td>
+						<td>Institute Name:</td>
+						<td><input type="text" placeholder="Institute Name"></td>
 					</tr>
 					<tr>
-						<td>New Password:</td>
-						<td><input type="password" placeholder="New Password"></td>
+						<td>Institute Type:</td>
+						<td><input type="text" placeholder="Institute type"></td>
+					</tr>
+					<tr>
+						<td>Institute Profile Pic:</td>
+						<td><input type="file" accept="image/*"></td>
+					</tr>
+					<tr>
+						<td>Director Name:</td>
+						<td><input type="text" placeholder="Director Name"></td>
+					</tr>
+					<tr>
+						<td>Director Profile Pic:</td>
+						<td><input type="file" accept="image/*"></td>
+					</tr>
+					<tr>
+						<td>Add description:</td>
+						<td>
+							<textarea></textarea>
+						</td>
 					</tr>
 					<tr>
 						<td>

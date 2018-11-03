@@ -110,7 +110,7 @@
 .profileBlock{
   width:88%;
   height:auto;
-  border:1px solid black;
+  border:0px solid black;
   box-sizing: border-box;
   background-color: white;
   padding:2px;
